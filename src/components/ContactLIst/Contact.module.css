@@ -1,0 +1,25 @@
+button {
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #363636;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(2, 2, 2, 0.2);
+  cursor: pointer;
+  background-color: #bbb9b9;
+
+  transition: background-color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+button:hover {
+  background-color: #000000;
+  color: #ecf1f3;
+}
+.items {
+  display: flex;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
