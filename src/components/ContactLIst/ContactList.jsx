@@ -3,13 +3,17 @@ import css from './Contact.module.css';
 
 export const ContactList = ({ contacts, onRemoveContact }) => (
   <ul className={css.list}>
-    {contacts.map(({ id, name, number }) => (
-      <li className={css.items} key={id}>
-        <p>{name} </p>
-        <p>: {number}</p>
-        <button onClick={() => onRemoveContact(id)}>Delete</button>
-      </li>
-    ))}
+    {contacts.map(({ id, name, number }) => {
+      return (
+        <li className={css.items} key={id}>
+          <p>{name} </p>
+          <p>: {number}</p>
+          <button type="button" onClick={() => onRemoveContact(id)}>
+            Delete
+          </button>
+        </li>
+      );
+    })}
   </ul>
 );
 
